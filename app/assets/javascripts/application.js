@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/* Initialisation */
+jQuery(document).ready(function(){
+  // ScrollTop button
+  jQuery('#top-link').click(function(){
+    jQuery('html,body').animate({scrollTop:0},'slow');return false;
+  });
+  // Scroll
+  jQuery(window).scroll(function(){
+    if(jQuery(this).scrollTop() > 400){
+      jQuery('#top-link').fadeIn();
+    }else{
+      jQuery('#top-link').fadeOut();
+    }
+  });
+});
