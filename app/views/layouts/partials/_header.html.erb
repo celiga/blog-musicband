@@ -11,9 +11,13 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
-          <li><%= link_to "Home", root_path %></li>
+          <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="jumbotron">
+    <h1>Music band name</h1>
+    <p>Best band ever</p>
+  </div>
 </header>

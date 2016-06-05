@@ -41,7 +41,7 @@ a:focus{
   text-align:center;
   text-transform: uppercase;
   padding-top:150px;
-  padding-bottom:150px;
+  padding-bottom:250px;
 }
 .jumbotron h1{
   font-weight:300;
@@ -61,6 +61,14 @@ a:focus{
 #page{
   position:relative;
 }
+#content{
+  padding-bottom:40px;
+}
+#content section{
+  padding-top:20px;
+  margin-bottom:60px;
+  border-bottom:1px solid #606060;
+}
 header{
   padding-top:50px;
 }
@@ -79,14 +87,6 @@ footer p{
   padding:30px 0 60px;
   text-align:center;
   text-transform: uppercase;
-}
-@media(min-width:769px){
-  .footer-top div:first-child{
-    padding-left:0;
-  }
-  .footer-top div:last-child{
-    padding-right:0;
-  }
 }
 
 /* Navigation */
@@ -116,6 +116,14 @@ footer p{
 }
 .navbar-collapse.collapse{
   text-align:center;
+}
+.navbar-toggle .icon-bar{
+  background-color:#fff;
+}
+@media(max-width:768px){
+  .navbar-collapse.collapse{
+    text-align:right;
+  }
 }
 
 /* Posts list */
@@ -149,4 +157,97 @@ footer p{
 .social-links a:hover,
 .social-links a:focus{
   color:rgba(255,255,255, 0.7);
+}
+
+/* Tables */
+table{
+  border-bottom:1px solid #606060;
+}
+.table-hover > tbody > tr:hover{
+  background-color:rgba(255,255,255,0.1);
+  cursor:pointer;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+  border-top-color: #606060;
+  padding-top:15px;
+  padding-bottom:15px;
+  vertical-align:middle;
+}
+
+/* Home */
+.section-more-link{
+  text-transform: uppercase;
+  font-size:0.8em;
+  color:rgba(255, 255, 255, 0.698);
+}
+.section-title{
+  float:left;
+  width:100%;
+  border-bottom:1px solid #606060;
+}
+.section-title h2{
+  float:left;
+  font-weight:700;
+  font-size:2rem;
+  margin-top:0;
+  margin-bottom:20px;
+}
+.section-title .section-more-link{
+  float:right;
+  font-weight:300;
+  letter-spacing: 0.1em;
+  margin-top:5px;
+}
+.videos-list{
+  /*float:left;
+  width:100%;
+  border-bottom:1px solid #606060;*/
+}
+.videos-list > div{
+  border-right:1px solid #606060;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.videos-list > div:last-child{
+  border-right:0;
+}
+.video-image:hover{
+  opacity:0.9;
+}
+.video-title{
+  font-weight: 700;
+  margin-top:10px;
+}
+#content section.gigs{
+  border-bottom:0;
+}
+.gigs .section-title{
+  border-bottom:0;
+}
+.gigs .section-more-link{
+  display: block;
+  text-align:center;
+  font-weight:700;
+}
+.gigs table td:nth-child(1){
+  text-transform:uppercase;
+  font-size:1.3rem;
+}
+.gigs table td:nth-child(2){
+  font-weight:700;
+  font-size:2rem;
+}
+.gigs table td:nth-child(3){
+  font-weight:700;
+  color:rgba(255, 255, 255, 0.698);
+}
+.gigs table td:nth-child(4){
+  color:rgba(255, 255, 255, 0.698);
+}
+@media(min-width:769px){
+  .gigs table td:nth-child(1){
+    max-width:20px;
+  }
+  #content .row div{
+  }
 }

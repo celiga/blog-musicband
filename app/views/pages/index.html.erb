@@ -1,4 +1,64 @@
-<div class="jumbotron">
-  <h1>Music band name</h1>
-  <p>Best band ever</p>
-</div>
+<section class="videos">
+  <div class="section-title">
+    <h2>Videos</h2>
+    <a class="section-more-link" href="#">All videos</a>
+  </div>
+  <div class="videos-list row">
+    <div class="col-sm-4">
+      <a href="#">
+        <img class="img-responsive video-image" src="<%= asset_path 'video-like-a-rose.jpg' %>" alt="Like A Rose - Ashley Monroe">
+        <div class="video-title">Like A Rose - Ashley Monroe</div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="#">
+        <img class="img-responsive video-image" src="<%= asset_path 'video-big-love.jpg' %>" alt="Big Love - Carrie Rodriguez">
+        <div class="video-title">Big Love - Carrie Rodriguez</div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="#">
+        <img class="img-responsive video-image" src="<%= asset_path 'video-waiting-on-june.jpg' %>" alt="Waiting On June - Holly Williams">
+        <div class="video-title">Waiting On June - Holly Williams</div>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="gigs">
+  <div class="section-title">
+    <h2>Upcoming gigs</h2>
+  </div>
+  <table class="table table-responsive table-hover">
+    <tr>
+      <td>Sep</td>
+      <td>14</td>
+      <td>Nashville, TN</td>
+      <td>The Bluebird Cafe</td>
+    </tr>
+    <tr>
+      <td>Sep</td>
+      <td>16</td>
+      <td>Seattle, WA</td>
+      <td>Tractor Tavern</td>
+    </tr>
+    <tr>
+      <td>Sep</td>
+      <td>17</td>
+      <td>Alexiandria, VA</td>
+      <td>The Birchmere</td>
+    </tr>
+    <tr>
+      <td>Sep</td>
+      <td>25</td>
+      <td>Washington, DC</td>
+      <td>The Hamilton</td>
+    </tr>
+    <tr>
+      <td>Oct</td>
+      <td>30</td>
+      <td>Chipping Ongar, Essex</td>
+      <td>Zinc Arts Centre</td>
+    </tr>
+  </table>
+  <a class="section-more-link" href="#">View all gigs</a>
+</section>
