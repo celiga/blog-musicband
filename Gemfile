@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Devise for authentification
 gem 'devise', '~> 3.5', '>= 3.5.2'
 
+# Use kaminari for pagination
+gem 'kaminari', '~> 0.17.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

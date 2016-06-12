@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'pages#index'
+  root 'pages#home'
+  get 'news' => "posts#index"
+  get 'news/:id', to: 'posts#show', as: 'post'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
