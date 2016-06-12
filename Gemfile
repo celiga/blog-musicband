@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use kaminari for pagination
 gem 'kaminari', '~> 0.17.0'
 
+# Use administrate for admin panel
+gem 'administrate', '~> 0.2.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
