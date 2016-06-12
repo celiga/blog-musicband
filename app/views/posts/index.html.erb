@@ -1,0 +1,14 @@
+<h1>News</h1>
+<% if @posts.size > 0 %>
+  <ul class="posts-list list-unstyled">
+      <% @posts.each do |post| %>
+        <li class="post-item">
+            <h2 class="post-title"><%= link_to post.title, post_path(post.id) %></h2>
+            <p class="post-date">On <%= post.created_at.strftime("%B %d, %Y") %></p>
+            <div class="post-content"><%= post.content %></div>
+        </li>
+      <% end %>
+  </ul>
+<% else %>
+  <p>There is no news for the moment.</p>
+<% end %>

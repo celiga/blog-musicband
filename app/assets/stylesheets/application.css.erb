@@ -20,6 +20,9 @@ h1,h2,h3{
   letter-spacing:0.1em;
   color:#fff;
 }
+h1{
+  text-align: center;
+}
 h2{
   font-size:1.6rem;
   font-weight:600;
@@ -40,13 +43,14 @@ a:focus{
   background-color:transparent;
   text-align:center;
   text-transform: uppercase;
-  padding-top:150px;
-  padding-bottom:250px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 .jumbotron h1{
   font-weight:300;
 }
 .jumbotron p{
+  display:none;
   letter-spacing: 0.1em;
   font-size:1.6rem;
   color:rgba(255, 255, 255, 0.698);
@@ -63,6 +67,12 @@ a:focus{
 }
 #content{
   padding-bottom:40px;
+}
+#content h1{
+  font-size:1.7em;
+  border-bottom:1px solid #606060;
+  padding-bottom:25px;
+  margin-bottom:50px;
 }
 #content section{
   padding-top:20px;
@@ -131,16 +141,39 @@ footer #top-link{
 }
 
 /* Posts list */
-.posts-list li{
-  margin-bottom:30px;
+.post-item{
+  margin-bottom:50px;
 }
 .post-title{
+  font-size:1.7em;
+  font-weight:normal;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.post-date{
+  text-transform: uppercase;
+  font-size:0.8em;
+  margin-bottom: 30px;
+}
+.post-content{
+  color:rgba(255, 255, 255, 0.698);
+}
+.post-more{
+  margin-top:30px;
+}
+
+/* Recent Posts list */
+.recentposts-list li{
+  margin-bottom:30px;
+}
+.recentposts-title{
   display:block;
   font-weight:bold;
   color:rgba(255, 255, 255, 0.698);
   margin-bottom:5px;
 }
-.post-date{
+.recentposts-date{
   font-size:0.8em;
   font-weight:300;
   letter-spacing: 0.1em;
@@ -254,4 +287,13 @@ table{
   }
   #content .row div{
   }
+}
+
+/* Home page */
+body.home .jumbotron{
+  padding-top:150px;
+  padding-bottom:250px;
+}
+body.home .jumbotron p{
+  display:block;
 }

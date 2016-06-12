@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
-  def index
+  def home
+    @body_id = "home"
   end
 end

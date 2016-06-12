@@ -1,0 +1,7 @@
+<h1>News</h1>
+<div class="post">
+  <h2 class="post-title"><%= @post.title %></h2>
+  <p class="post-date">On <%= @post.created_at.strftime("%B %d, %Y") %></p>
+  <div class="post-content"><%= @post.content %></div>
+  <p class="post-more"><%= link_to '<i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back'.html_safe, news_path %></p>
+</div>
