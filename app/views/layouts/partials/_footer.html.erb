@@ -13,20 +13,18 @@
       </div>
       <div class="col-sm-4">
         <h2>Recent posts</h2>
-        <ul class="recentposts-list list-unstyled">
-          <li>
-            <a href="#" class="recentposts-title">Welcome to our redesigned website</a>
-            <div class="recentposts-date">April 1, 2015</div>
-          </li>
-          <li>
-            <a href="#" class="recentposts-title">New tour dates posted</a>
-            <div class="recentposts-date">December 16, 2014</div>
-          </li>
-          <li>
-            <a href="#" class="recentposts-title">History of popular music</a>
-            <div class="recentposts-date">December 15, 2014</div>
-          </li>
-        </ul>
+        <% if @recent_posts.size > 0 %>
+          <ul class="recentposts-list list-unstyled">
+              <% @recent_posts.each do |recent_post| %>
+                <li>
+                  <%= link_to recent_post.title, post_path(recent_post.id), class: "recentposts-title" %>
+                  <div class="recentposts-date"><%= recent_post.created_at.strftime("%B %d, %Y") %></div>
+                </li>
+              <% end %>
+          </ul>
+        <% else %>
+          <p>There is no news for the moment.</p>
+        <% end %>
       </div>
     </div>
   </div>
