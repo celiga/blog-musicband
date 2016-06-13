@@ -44,11 +44,16 @@
         </ul>
       </div>
       <p>Music band name</p>
+      <div class="admin-links">
       <% if !user_signed_in? %>
         <p class="admin-link"><%= link_to "Admin login", new_user_session_path %></p>
       <% else %>
+        <% if current_user.role == "admin" %>
+          <p class="admin-link"><%= link_to "Administrate", admin_root_path %></p>
+        <% end %>
         <p class="admin-link"><%= link_to "Logout", destroy_user_session_path, method: :delete %></p>
-      <% end %> 
+      <% end %>
+      </div>
     </div>
   </div>
   <a href="#header" id="top-link"><span class="sr-only">Top</span><i aria-hidden="true" class="fa fa-arrow-circle-up fa-2x"></i></a>
