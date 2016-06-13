@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     root to: "posts#index"
   end
 
+  devise_for :users
   root 'pages#home'
   get 'news' => "posts#index"
   get 'news/:id', to: 'posts#show', as: 'post'
