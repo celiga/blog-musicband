@@ -9,6 +9,7 @@ module Admin
     before_filter :authenticate_admin
 
     def authenticate_admin
+      redirect_to '/', alert: 'Not authorized.' unless current_user && access_whitelist
       # TODO Add authentication logic here.
     end
 
@@ -17,5 +18,10 @@ module Admin
     # def records_per_page
     #   params[:per_page] || 20
     # end
+    
+    private
+      def access_whitelist
+        current_user.role == "admin"
+      end
   end
 end
