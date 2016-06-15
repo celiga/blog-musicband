@@ -1,9 +1,32 @@
 Blog musicband
 
+Projet de fin de formation Simplonline
+
 == Install
 
+* Clone or download
+* bundle install
+* frontend : localhost:3000
+* back-end : localhost:3000/admin
+
+== Features
+
+* Users with "admin" role can create/edit/delete posts
+
+* Users can leave comments on posts
+
+== Gem
+
+* Authentification : gem {Devise}[https://github.com/plataformatec/devise]
+
+* Admin panel : gem {Administrate}[https://github.com/thoughtbot/administrate]
+
 == Roadmap
+
+* Add comments system for posts
 
 * Install ckeditor on admin panel
 
 * Add logout link on admin panel
+
+* Add meta tags
